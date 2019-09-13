@@ -1,0 +1,23 @@
+.flex-btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.font-color-gray{
+    color: #B3B3B3;
+}
+.font-color-orange{
+    color: #FC9B09;
+}
+.font-color-white{
+    color: white;
+}
+.text-bold{
+    font-weight: 600;
+}

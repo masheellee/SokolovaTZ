@@ -1,0 +1,46 @@
+.pic-box{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    flex-wrap: wrap;
+}
+.pic-box__item{
+    width: 25%;
+    background: center center / contain no-repeat;
+    height: 185px;
+    border-radius: 4px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+.pic-box__item_woman{
+    background-image: url(../../../images/woman.jpg);
+}
+.pic-box__item_helicopter{
+    background-image: url(../../../images/helicopter.jpg);
+}
+.pic-box__item_kiss{
+    background-image: url(../../../images/kiss.jpg);
+}
+.pic-box__item_handsup{
+    background-image: url(../../../images/handsup.jpg);
+}
+.window{
+    position: relative;
+    min-height: 330px;
+}
+  
+@media (max-width: 900px){
+    .window{
+        overflow: hidden;
+        min-height: 220px;
+    }
+    .pic-box{
+        position: absolute;
+        flex-wrap: unset;
+    }
+    .pic-box__item{
+        min-width: 100%;
+    }  
+
+}

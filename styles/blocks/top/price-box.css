@@ -1,0 +1,28 @@
+.price-box{
+    background: url(../../../images/price-box.png) center center / cover no-repeat;
+    height: 96px;
+    width: 224px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.price-box__item{
+    width: 50%;
+    margin: 0 0 20px 20px;
+}
+.price-box__item_font{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.price-box__item_bold{
+    font-weight: 800;
+    font-size: 35px;
+}
+.price-box__item_border{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50px;
+}

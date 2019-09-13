@@ -1,0 +1,17 @@
+@media (max-width: 900px){
+    .header-padding{
+        padding: 23px 15px;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .icon-human,.moscow{
+        display: block;
+    }
+    .phone{
+        display: none;
+    }
+    .schedule-item-left {
+        margin-bottom: 50px;
+    }
+}

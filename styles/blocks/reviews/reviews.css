@@ -1,0 +1,32 @@
+.reviews-item{
+    align-items: center;
+    padding: 20px;
+    max-width: 40%;
+}
+.reviews-item_border{
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+}
+.reviews-item__icon{
+    background: url(../../../images/icons/cup.png) center center / contain no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.reviews-item__text{
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.reviews-item__text_bold{
+    font-weight: bold;
+}
+@media (max-width: 900px){
+    .reviews-item {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }    
+    .reviews-item__text{
+        flex-basis: 242px;
+    }
+}        

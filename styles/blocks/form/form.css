@@ -1,0 +1,82 @@
+.pop-up{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    zoom: 60%;
+    z-index: 2;
+}  
+.form{
+    background: white;
+    padding: 61px 97px;
+    position: relative;
+    border-radius: 6px;
+
+} 
+.form p{
+    margin-bottom: 31px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+}
+.form__headline{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px
+}
+.form__headline-red{
+    color: red;
+}
+.form_margin{
+    margin-bottom: 20px;
+}
+input{
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 13px 20px;
+    width: 100%;
+}
+input::placeholder{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;color: #C7C7C7;
+}
+.card-box{
+    width: 420px;
+}
+input.card-box__item{
+    width: 50%;
+}
+button{
+    background: #FC9B09;
+    border-radius: 3px; 
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 26px 129px;
+    width: 100%;
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+    height: 13px;
+    width: 13px;
+}
+.cancel{
+    background: url(../../../images/icons/Close.png) center center / contain no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

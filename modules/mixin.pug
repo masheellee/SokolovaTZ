@@ -1,0 +1,62 @@
+mixin showDown(showWhat) 
+    .showmore
+      .showmore-box.flex.flex-center
+        .arrow-down 
+        .showmore__text= showWhat
+        .arrow-down
+mixin showUp(showWhat) 
+    .showless
+      .showless-box.flex.flex-center
+        .arrow-up
+        .showmore__text= showWhat
+        .arrow-up
+mixin show-text(text)
+    .showmore__text= text
+mixin readmore-btn
+    .readmore.flex
+        +show-text('Читать еще')
+        .arrow-down
+mixin review
+    .reviews.wrapper
+      .reviews-item.flex
+          .reviews-item__icon
+          .reviews-item__text Более 
+            span.reviews-item__text_bold 50 
+            | отзывов с оценкой
+          .star-review 
+            mixin star
+              .star
+            +star
+            +star
+            +star
+            +star
+            +star
+mixin schedule-item(time)
+    .schedule-item.schedule-item__space.flex 
+        .schedule-item-left
+          ul
+            li.schedule-item-left_margin= time
+            li.schedule-item-left_margin 
+              span.text-bold 1500₽
+            li Осталось — 1 место
+        .schedule-item-right
+          a(href="#") Выбрать
+mixin users-reviews(className,name,job,response,texts,date)
+      .wrapper
+        .users-reviews.flex
+          .users-reviews__user-pic(class=className)
+          .users-reviews__content
+            p.user-name.user-name_margin= name
+            p.user-job.user-job_margin= job
+            .flex-btw.users-reviews__content_margin
+              .box-stars.flex
+                +star
+                +star
+                +star
+                +star
+                +star
+              .response.flex
+                .response__icon
+                .response__text= response
+            p.user-texts.user-texts_margin= texts
+            p.user-date= date

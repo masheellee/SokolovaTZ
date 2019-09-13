@@ -1,0 +1,24 @@
+.social-item{
+    background: center center / contain no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.social-item__vk{
+    background-image: url(../../../images/icons/vk.png);
+}
+.social-item__fb{
+    background-image: url(../../../images/icons/Facebook.png);
+}
+.social-item__inst{
+    background-image: url(../../../images/icons/Instragram.png);
+}
+.social-item__web{
+    background-image: url(../../../images/icons/RU.png);
+}
+@media(max-width: 900px){
+    .social-item {
+        width: 20px;
+        margin-right: 9px;
+    }    
+}

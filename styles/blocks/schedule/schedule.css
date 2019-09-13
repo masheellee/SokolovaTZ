@@ -1,0 +1,52 @@
+.schedule{
+    padding: 15px;
+}
+.schedule-box{
+    max-width: 770px;
+    margin-bottom: 60px;
+}
+
+.schedule_border{
+    border: 1px solid #C7C7C7;
+}
+
+.schedule-item{
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.schedule-item_border{
+    border-bottom: 0.5px solid #C7C7C7;
+}
+.schedule-item__pic{
+    background: url(../../../images/icons/Calendar.png) center center / contain no-repeat;
+    width: 18px;
+    height: 18px;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 3px;
+    margin-left: 14px
+}
+.schedule-item__space{
+    justify-content: space-between;
+    align-items: center;
+}
+.schedule-item-left_margin{
+    margin-bottom: 10px;
+}
+.schedule-item-right a{
+    border: 2px solid #FC9B09;
+    color: #FC9B09;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 16px 33px;    
+}
+.schedule-item-left{
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+@media (max-width: 900px){
+    .schedule-item-left {
+        margin-bottom: 50px;
+    }
+}

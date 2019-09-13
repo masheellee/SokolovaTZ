@@ -1,0 +1,16 @@
+.star-review{
+    display: flex;
+}
+
+.star{
+    background: url(../../../images/icons/star.png) center center / contain no-repeat;
+    width: 18px;
+    height: 17px;
+    margin-right: 5px;
+}
+@media (max-width: 900px){
+    .star-review{
+        margin-left: 40px;
+    }
+}
+    

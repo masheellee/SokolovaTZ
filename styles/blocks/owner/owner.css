@@ -1,0 +1,70 @@
+.owner{
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+.owner_border{
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+}
+.owner-left{
+    width: 60%;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+.owner-left__item h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+.owner-left__item p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.owner-left__item_margin{
+    margin-bottom: 35px;
+}
+.owner-right{
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+.owner-right h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 14px 0;
+}
+.owner-right__img{
+    background: url(../../../images/photographer.png) center center / contain no-repeat;
+    width: 139px;
+    height: 139px;
+}
+.owner-right a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5286EC;
+    max-width: 200px;
+    text-align: center;
+    margin-top: 14px;
+}
+.owner-right__heart{
+    background: url(../../../images/icons/heart.jpg) center center / contain no-repeat;
+    width: 31px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+@media (max-width: 900px){
+    .owner{
+        padding: 15px;
+    }
+    .owner-right{
+        margin-top: 20px;
+    }
+
+}

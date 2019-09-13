@@ -1,0 +1,40 @@
+.sponsors{
+    align-items: center;
+    background-color: #FAF9F8;
+    
+}
+.sponsors-box{
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+.sponsors-padding{
+    padding: 30px;
+}
+.sponsors-banks-item{
+    background: center center / contain no-repeat;
+    width: 39px;
+    height: 25px;
+    margin-right: 20px;
+}
+.sponsors-banks-item__mc{
+    background-image: url(../../../images/icons/MC.png);
+}
+.sponsors-banks-item__visa{
+    background-image: url(../../../images/icons/VISA.png);
+}
+.support{
+    max-width: 256px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B3B3B3;
+}
+.sponsors-banks_margin{
+    margin-right: 276px
+}
+@media(max-width: 900px){
+    .support{
+        max-width: 350px;
+        margin-top: 15px;
+        text-align: center;
+    }    
+}

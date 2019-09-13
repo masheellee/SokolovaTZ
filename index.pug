@@ -1,0 +1,213 @@
+extends layouts/main.pug 
+include modules/mixin.pug
+block title
+    | Главная станица
+block header
+    header.header.header-padding.wrapper.flex
+      .logo
+      .phone.phone-margin
+        span.font-color-gray Телефон:
+        | 8(800)-123-12-12
+      .moscow Москва
+      .icon-human
+block top
+    .top.flex.font-color-white
+      .top-box.wrapper
+        h1 Эксклюзивная 
+          span.font-color-orange фотосессия 
+          | при полете на вертолете
+        .price-box.flex
+          .price-box__item
+            i.price-box__item_font Стоимость:
+            br
+            i.price-box__item_bold 1500₽ 
+          .price-box__item
+            .price-box__item_border
+              i.price-box__item_bold %
+        a.button-reserve(href="#") Забронировать место
+block feature
+    .feature.feature_margin.wrapper.flex
+      .feature-item
+        h2 Фотосессия в вертолете
+        p Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
+        ul
+          li
+            .feature-item__icon.feature-item__icon_circle
+            |3 часа съемки
+          li
+            .feature-item__icon.feature-item__icon_camera
+            |Более 50 фотографий
+          li
+            .feature-item__icon.feature-item__icon_location
+            |Москва
+          li
+            .feature-item__icon.feature-item__icon_chat
+            |Готовы ответить на любые вопросы
+      .feature-item.feature-item_position
+        .feature-item__pic
+        .feature-item__play
+      iframe(id="video" width="560" height="315" src="https://www.youtube.com/embed/UALhvLWsdZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen )
+block reviews 
+    .reviews.wrapper
+      .reviews-item.reviews-item_border.flex
+          .reviews-item__icon
+          .reviews-item__text Более 
+            span.reviews-item__text_bold 50 
+            | отзывов с оценкой
+          .star-review
+            mixin star
+              .star
+            +star
+            +star
+            +star
+            +star
+            +star
+block headline-pictures
+    .headline.wrapper
+        h2 Фотографии пакета:
+block pictures
+    .window
+      .pic-box.flex.wrapper
+        .pic-box__item.pic-box__item_woman
+        .pic-box__item.pic-box__item_helicopter
+        .pic-box__item.pic-box__item_kiss
+        .pic-box__item.pic-box__item_handsup
+        .pic-box__item.pic-box__item_kiss
+        .pic-box__item.pic-box__item_handsup
+        .pic-box__item.pic-box__item_helicopter
+        .pic-box__item.pic-box__item_kiss
+block showmore
+    .showmore
+      .showmore-box.flex.flex-center
+        .arrow-down 
+        +show-text('Показать все фото')
+        .arrow-down
+block showless
+    .showless
+      .showless-box.flex.flex-center
+        .arrow-up
+        +show-text('Скрыть')
+        .arrow-up
+block owner
+    .owner.owner_border.wrapper.flex
+      .owner-left
+        .owner-left__item.owner-left__item_margin
+          h3 Об организаторе:
+          p.owner-left__item_margin Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах.
+          p Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…
+          +readmore-btn
+        .owner-left__item
+          h3 Что я предоставлю:
+          p Встречу вас на машине после длительного перелёта. Качественный подбор места и локации для вашей съемки. При необходимости всегда возможно прерваться на обед/ужин. Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае!
+          +readmore-btn
+      .owner-right.flex
+        .owner-right__img
+        h3 Марина Иванова
+        p Фотограф
+        a(href='#') Показать больше информации о фотографе
+        .owner-right__heart
+block headline-schedule
+    .headline.wrapper
+        h2 Доступная съемка в ближайшее время:
+block schedule
+    .schedule.wrapper
+      .schedule-box.schedule_border
+        .schedule-item.schedule-item_border.flex
+          p Пятница, 
+            span.text-bold 14 
+            |сентября
+          .schedule-item__pic
+        +schedule-item('15:00 - 18:00')
+        +schedule-item('19:00 - 20:00') 
+        +review
+block map
+    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A719c4a69fe4e06d23fa1895e5dad5d991ff3bb3d4319860d080b8067a6e9a7d6&amp;source=constructor" width="100%" height="509" frameborder="0")
+block headline-users-reviews
+    .headline.wrapper
+        h2 Отзывы:
+block users-reviews 
+  +users-reviews(
+                'users-reviews__user-pic_1',
+                'Валерия Антонова',
+                'Арт-директор',
+                'Супер! Я бы заказала съемку снова!',
+                'Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!',
+                '27 Апреля, 2019г.'
+                )
+  +users-reviews(
+                'users-reviews__user-pic_2',
+                'Виталий Петров',
+                'Фотограф',
+                'Супер! Я бы заказала съемку снова!',
+                'Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо!',
+                '19 Апреля, 2019г.'
+                ) 
+  +users-reviews(
+                'users-reviews__user-pic_3',
+                'Джим Керри',
+                '',
+                'Супер! Я бы заказала съемку снова!',
+                ' Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!',
+                '11 Апреля, 2019г.'
+                ) 
+  +showDown('Показать Все (134)')
+  +showUp('Скрыть')
+block footer
+    footer.footer.footer-padding.wrapper.flex-btw
+      .logo
+      .socials.flex
+        .social-item.social-item__vk
+        .social-item.social-item__fb
+        .social-item.social-item__inst
+        .social-item.social-item__web
+block sponsors
+    .sponsors.sponsors-padding
+      .sponsors-box.flex.wrapper 
+        .sponsors-banks.sponsors-banks_margin.flex
+          .sponsors-banks-item.sponsors-banks-item__mc
+          .sponsors-banks-item.sponsors-banks-item__visa
+        .support Тех. поддержка: 8(800)700-00-00 © 2018 HELYFLY. All Rights Reserved.
+block pop-up
+    .pop-up
+      .form
+        p Бронирование
+        form(method="GET" action="form.php")
+          .form__headline Дата
+            span.form__headline-red *
+          input.form_margin(type="text" name="date" placeholder="01.01.2019")
+          .form__headline Email
+            span.form__headline-red *
+          input.form_margin(type="email" name="user-email" placeholder="Электронная почта")
+          .form__headline Имя
+            span.form__headline-red *
+          input.form_margin(type="text" name="user-name" placeholder="Ваше имя")
+          .form__headline Фамилия
+            span.form__headline-red *
+          input.form_margin(type="text" name="user-surname" placeholder="Ваша фамилия")
+          .form__headline Телефон
+            span.form__headline-red *
+          input.form_margin(type="number" name="user-phone" placeholder="+7 (905) 184-81-40")
+          .form__headline Данные карты
+            span.form__headline-red *
+          input(type="number"  name="user-card" placeholder="Номер карты")
+          .card-box.flex  
+            input.card-box__item.form_margin(type="number" name="user-card-exp" placeholder="Срок действия")
+            input.card-box__item.form_margin(type="number" name="CVV" placeholder="CVV")
+          .card-box.flex  
+            input(type="checkbox" name="checkbox") 
+            .form_margin Я согласен с пользовательским соглашением и публичной офертой
+          button(type="submit" id="checkbox" value="Submit") Забронировать
+        
+        .cancel
+        .logo-in-form        
+
+
+
+
+      
+
+
+
+
+
+        

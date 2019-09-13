@@ -1,0 +1,22 @@
+.showmore{
+    padding: 45px;
+}
+.showmore-box{
+    align-items: center;
+    justify-content: center;
+}
+.showmore__text{
+    font-weight: 500;
+    font-size: 17px;
+    color: #5286EC;
+    cursor: pointer;
+}
+.readmore{
+    align-items: center;
+    margin-top: 12px;
+}
+@media (max-width: 900px){
+    .showmore{
+        display: none;
+    }
+}

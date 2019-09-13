@@ -1,0 +1,6 @@
+.icon-human{
+    display: none;
+    background: url(../../../images/icons/human.jpg) center center / contain no-repeat;
+    width: 20px;
+    height: 20px;
+}

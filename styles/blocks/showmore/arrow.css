@@ -1,0 +1,13 @@
+.arrow-down{
+    background: url(../../../images/icons/Arrow.png) center center / contain no-repeat;
+    width: 11px;
+    height: 6px;
+    margin: 0 10px;
+}
+.arrow-up{
+    background: url(../../../images/icons/Arrow.png) center center / contain no-repeat;
+    width: 11px;
+    height: 6px;
+    transform: rotate(180deg);
+    margin: 0 10px;
+}
